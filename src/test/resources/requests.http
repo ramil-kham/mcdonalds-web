@@ -1,0 +1,117 @@
+###
+GET http://localhost:8080/managers
+
+###
+
+POST http://localhost:8080/managers
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Newbie",
+  "salary": 50000,
+  "plan": 100000,
+  "department": "girls",
+  "bossId": 6
+}
+
+###
+
+POST http://localhost:8080/managers
+Content-Type: application/json
+
+{
+  "id": 7,
+  "name": "Newbie (Updated)",
+  "salary": 45000,
+  "plan": 100000,
+  "department": "girls",
+  "bossId": 6
+}
+
+###
+POST http://localhost:8080/sales
+Content-Type: application/json
+
+{
+  "id": 0,
+  "managerId": 1,
+  "details": [
+    {
+      "productId": 1,
+      "qty": 1,
+      "price": 100
+    }
+  ]
+}
+
+###
+POST http://localhost:8080/sales
+Content-Type: application/json
+
+{
+  "id": 0,
+  "managerId": 1,
+  "details": [
+    {
+      "productId": 1,
+      "qty": 11,
+      "price": 200
+    }
+  ]
+}
+
+###
+POST http://localhost:8080/sales
+Content-Type: application/json
+
+{
+  "id": 0,
+  "managerId": 1,
+  "details": [
+    {
+      "productId": 1,
+      "qty": 1,
+      "price": 200
+    },
+    {
+      "productId": 111,
+      "qty": 11,
+      "price": 200
+    }
+  ]
+}
+
+###
+
+GET http://localhost:8080/products
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Gamburger",
+  "price": 140,
+  "qty": 4
+}
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Nuggets (updated)",
+  "price": 180,
+  "qty": 11
+}
+
+###
+
+DELETE http://localhost:8080/products/3/remove
+
+
