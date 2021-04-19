@@ -112,6 +112,6 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:8080/products/3/remove
+
 
 
