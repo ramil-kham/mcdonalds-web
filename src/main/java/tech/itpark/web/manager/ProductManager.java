@@ -93,6 +93,20 @@ WHERE id = ?
             throw new RuntimeException(e);
         }
     }
+/*
+    public void removeById(long id) {
+        try(
+                Connection connection = dataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM products WHERE id = ? ");
+        )
+        {
+            preparedStatement.setLong(1, id);
+            preparedStatement.execute();
+        }
+             catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
 
-
+    }
+*/
 }
